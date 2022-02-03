@@ -10,6 +10,10 @@ submitBtn.addEventListener('click', () => {
 
   const len = passwordLength.value;
 
+  if (len < 0) {
+    alert('Please provide Postitve number')
+  }
+
   const upperString = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
   const lowerString = 'abcdefghijklmnopqrstuvwxyz'
   const specialString = '@#$'
